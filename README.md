@@ -1,7 +1,7 @@
 # 🎓 Chatbot DUK Admission Assistant
 
 
-> **A production-grade Hybrid RAG system for Digital University Kerala (DUK) Admissions 2025. Engineered with a deterministic guardrail layer to prioritize verified admission rules over generic vector retrieval, ensuring zero hallucinations on critical queries.**
+**A production-grade Hybrid RAG system for Digital University Kerala (DUK) Admissions 2025. Engineered with a deterministic guardrail layer to prioritize verified admission rules over generic vector retrieval, ensuring zero hallucinations on critical queries.**
 
 ---
 
