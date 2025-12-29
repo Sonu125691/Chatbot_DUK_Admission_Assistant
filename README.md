@@ -59,9 +59,15 @@ This is a Retrieval-Augmented Generation (RAG) based AI chatbot designed to assi
 👉 Watch the video demonstration of the chatbot here:  
 🔗 [Demo Video – DUK Admission Assistant](https://drive.google.com/file/d/1htzYYjschxFuRdKFu0sjZSfOdh7o8Qtn/view?usp=drive_link)
 
+---
 
+## 🧠 What I Learned
 
-
-
-
+- This project showed me that Retrieval-Augmented Generation is driven by data quality more than anything else. After extracting the PDF with Docling, the dataset initially became more than 1000 lines. My first cleaning reduced it to 933 lines, and then through many testing cycles, errors, frustration, and refinement, I finally arrived at 677 meaningful lines that produced reliable answers.
+- I didn’t plan to add the important facts file (`important_facts.md`) at the beginning. It formed naturally through mistakes. Whenever the chatbot answered incorrectly, I added the correct fact into this file. This taught me why curated, high-truth data is essential.
+- I experienced why professionals say "80% of the work is data and 20% is the model." In my first RAG project, it felt like 90% of the work was cleaning, restructuring, and validating information, and only 10% was writing code.
+- I learned how metadata structure impacts retrieval. Simple decisions like using only `#` and `##` headings and choosing a 250-token chunk size made a major difference in accuracy.
+- I learned the importance of retrieval settings. After trial and error, I chose k = 10 because it consistently gave the most accurate results.
+- I learned the real power of prompt engineering. Strict system rules, limited memory window, and clearly defined fallback behavior taught me that prompt is not decoration. It is the soul that governs how the model responds.
+- The biggest learning was intuitive. The project was built through continuous testing, editing, testing again, and refining. That cycle, repeated many times, taught me more than any guide or tutorial. It was challenging, but it gave me a real, felt understanding of how RAG systems behave.
 
