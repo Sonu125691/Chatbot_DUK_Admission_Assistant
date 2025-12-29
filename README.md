@@ -1,4 +1,39 @@
 # 🎓 Chatbot DUK Admission Assistant  
+
+This is a Retrieval-Augmented Generation (RAG) based AI chatbot designed to assist with Digital University Kerala (DUK) 2025 admissions. It uses the official 2025 admission prospectus PDF to provide instant answers about the University, available programmes, eligibility criteria, entrance exams, fees, how to apply, and other related details. The system is built fully offline using Llama 3.2 (3B) for generation and uses `sentence-transformers/all-MiniLM-L6-v2` model for text embeddings with FAISS vector search, and implemented with a Streamlit interface.
+
+---
+
+## Workflow – How This Chatbot Was Built
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 AI-Powered RAG Chatbot for Digital University Kerala (DUK) – 2025 Admissions
 
 This project is a **local RAG-based chatbot** built using **Llama 3.2 (3B local model)**, **FAISS vector search**, and **Streamlit UI**.  
