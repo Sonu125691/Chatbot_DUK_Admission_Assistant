@@ -57,7 +57,7 @@ This is a Retrieval-Augmented Generation (RAG) based AI chatbot designed to assi
 ## 🎥 Demo
 
 👉 Watch the video demonstration of the chatbot here:  
-🔗 [Demo Video – DUK Admission Assistant](VIDEO_LINK_HERE)
+🔗 [Demo Video – DUK Admission Assistant](https://drive.google.com/file/d/1htzYYjschxFuRdKFu0sjZSfOdh7o8Qtn/view?usp=drive_link)
 
 
 
