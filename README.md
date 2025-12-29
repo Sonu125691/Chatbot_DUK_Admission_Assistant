@@ -4,11 +4,15 @@ This is a Retrieval-Augmented Generation (RAG) based AI chatbot designed to assi
 
 ---
 
-## Workflow – How This Chatbot Was Built
+## 📌 Workflow - How This Chatbot Was Built
 
+### 1️⃣ Data Extraction & Cleaning
 
-
-
+- The Digital University Kerala (DUK) 2025 Prospectus (30-page PDF) was first extracted because PDF format is not suitable for efficient AI retrieval.
+- Text extraction was done using **Docling**, converting the PDF into a Markdown file (`duk_data.md`) for easier processing.
+- After the **first cleaning cycle**, the extracted text became **933 lines** - still containing noise and broken formatting.
+- To improve retrieval accuracy, only **two Markdown header levels** were used: `#` for Main sections and `##` for Sub-sections. Using only these two levels helped the retriever read the data more clearly and increased answer accuracy.
+- After testing the chatbot multiple times and refining the data further, additional cleaning was performed - and the final optimized dataset became **677 lines**, resulting in more reliable retrieval and better model accuracy.
 
 
 
