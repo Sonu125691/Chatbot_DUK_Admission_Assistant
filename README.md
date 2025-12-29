@@ -52,6 +52,13 @@ This is a Retrieval-Augmented Generation (RAG) based AI chatbot designed to assi
   - The top_p value is set to **0.9** to prevent random or creative answers. 
   - The num_ctx value is set to **8192** because this is the maximum context window of Llama 3.2 (3B), allowing long prompts to be processed without truncation.
 
+---
+
+## 🎥 Demo
+
+👉 Watch the video demonstration of the chatbot here:  
+🔗 [Demo Video – DUK Admission Assistant](VIDEO_LINK_HERE)
+
 
 
 
