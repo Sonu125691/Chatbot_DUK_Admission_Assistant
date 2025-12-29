@@ -13,6 +13,17 @@ This is a Retrieval-Augmented Generation (RAG) based AI chatbot designed to assi
 - After the **first cleaning cycle**, the extracted text became **933 lines** but still contains noise and broken formatting.
 - To improve retrieval accuracy, only **two Markdown header levels** were used: `#` for Main sections and `##` for Sub-sections. Using only these two levels helped the retriever read the data more clearly and increased answer accuracy.
 - After testing the chatbot multiple times and refining the data further, additional cleaning was performed and the final optimized dataset became **677 lines**, resulting in more reliable retrieval and better model accuracy.
+ 
+### 2️⃣ Hybrid Chunking & Embedding Preparation
+
+- A hybrid chunking strategy was used to prepare the text for retrieval.
+  - First, the cleaned Markdown file was split using `MarkdownHeaderTextSplitter`, based on the `#` and `##` headings. This produced 29 structured chunks.
+  - After that, a second split was done using `RecursiveCharacterTextSplitter` with a chunk size of 250 tokens and a 60-token overlap. This produced 43 final text chunks.
+  - The 250-token size was chosen intentionally because the embedding model can process approximately 256 tokens, so staying within 250 prevents loss of information.
+- For embedding generation, the model `sentence-transformers/all-MiniLM-L6-v2` was used.
+  - This model converts text into 384-dimensional embeddings.
+- Once the embeddings were generated, they were saved into a FAISS vector database. 
+
 
 
 
