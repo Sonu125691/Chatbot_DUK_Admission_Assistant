@@ -22,7 +22,38 @@ This is a Retrieval-Augmented Generation (RAG) based AI chatbot designed to assi
   - The 250-token size was chosen intentionally because the embedding model can process approximately 256 tokens, so staying within 250 prevents loss of information.
 - For embedding generation, the model `sentence-transformers/all-MiniLM-L6-v2` was used.
   - This model converts text into 384-dimensional embeddings.
-- Once the embeddings were generated, they were saved into a FAISS vector database. 
+- Once the embeddings were generated, they were saved into a FAISS vector database.
+
+### 3️⃣ Important Facts File (Manual Accuracy Reinforcement)
+
+- During testing, the chatbot sometimes generated wrong or incomplete answers. To solve this, an additional file named `important_facts.md` was created.
+- This file contains the most important factual points that the model must follow while answering.
+- Whenever the chatbot responded incorrectly during testing, the correct factual information was identified and added into this file.
+- This process made the model more accurate, because the retrieval context is checked only after referring to the information inside `important_facts.md`, giving it the highest priority.
+
+### 4️⃣ Application Logic
+
+- The chatbot interface was built using **Streamlit**, providing a simple and interactive chat UI.
+- The RAG model runs **fully offline** using **Ollama** with the **Llama 3.2 (3B)** model.
+  - This model was selected because it fits and performs efficiently on my laptop with an **RTX 4050 (6GB VRAM)**.
+- The FAISS index (`duk_faiss_index`) is loaded inside the app, and retriever is created to fetch the most relevant chunks based on user questions.
+  - The retriever uses **k = 10**, which was chosen because returning 10 top chunks resulted in the most accurate answers during testing.
+- The file `important_facts.md` is loaded first and always given highest priority inside the prompt. Retrieved context from FAISS is only considered after that.
+- A **custom system prompt** was engineered to:
+  - block hallucinations
+  - avoid printing internal context
+  - force clean and structured answers
+  - reply only when information exists
+  - if information is missing, the model must reply **exactly**: `"Sorry, I can't answer this question."`
+- A small chat history window was implemented with a **window size of 3 messages**.  
+  - This design intentionally limits past context to avoid unnecessary prompt expansion, which reduces hallucination risk and preserves clean output.
+- Hyperparameters tuned for stability and accuracy:
+  - The temperature is set to **0.1** to keep responses factual. 
+  - The top_p value is set to **0.9** to prevent random or creative answers. 
+  - The num_ctx value is set to **8192** because this is the maximum context window of Llama 3.2 (3B), allowing long prompts to be processed without truncation.
+
+
+
 
 
 
