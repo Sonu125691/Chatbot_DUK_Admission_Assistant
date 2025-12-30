@@ -12,7 +12,7 @@ This is a Retrieval-Augmented Generation (RAG) based AI chatbot designed to assi
 - Text extraction was done using **Docling**, converting the PDF into a Markdown file (`duk_data.md`) for easier processing.
 - After Docling extraction, the raw text expanded to more than 1000 lines. After the first manual cleaning cycle, it was reduced to **933 lines** but still ccontained noise and broken formatting.
 - To improve retrieval accuracy, only **two Markdown header levels** were used: `#` for Main sections and `##` for Sub-sections. Using only these two levels helped the retriever read the data more clearly and increased answer accuracy.
-- After testing the chatbot multiple times and refining the data further, additional cleaning was performed and the final optimized dataset became **677 lines**, resulting in more reliable retrieval and better model accuracy.
+- After testing the chatbot multiple times and refining the data further, additional cleaning was performed and the final optimized dataset became **680 lines**, resulting in more reliable retrieval and better model accuracy.
  
 ### 2️⃣ Hybrid Chunking & Embedding Preparation
 
@@ -63,7 +63,7 @@ This is a Retrieval-Augmented Generation (RAG) based AI chatbot designed to assi
 
 ## 🧠 What I Learned
 
-- This project showed me that Retrieval-Augmented Generation is driven by data quality more than anything else. After extracting the PDF with Docling, the dataset initially became more than 1000 lines. My first cleaning reduced it to 933 lines, and then through many testing cycles, errors, frustration, and refinement, I finally arrived at 677 meaningful lines that produced reliable answers.
+- This project showed me that Retrieval-Augmented Generation is driven by data quality more than anything else. After extracting the PDF with Docling, the dataset initially became more than 1000 lines. My first cleaning reduced it to 933 lines, and then through many testing cycles, errors, frustration, and refinement, I finally arrived at 680 meaningful lines that produced reliable answers.
 - I didn’t plan to add the important facts file (`important_facts.md`) at the beginning. It formed naturally through mistakes. Whenever the chatbot answered incorrectly, I added the correct fact into this file. This taught me why curated, high-truth data is essential.
 - I experienced why professionals say "80% of the work is data and 20% is the model." In my first RAG project, it felt like 90% of the work was cleaning, restructuring, and validating information, and only 10% was writing code.
 - I learned how metadata structure impacts retrieval. Simple decisions like using only `#` and `##` headings and choosing a 250-token chunk size made a major difference in accuracy.
