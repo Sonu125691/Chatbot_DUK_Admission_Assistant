@@ -630,7 +630,10 @@ The Training and Placement Cell supports student career development and employme
 
 ## Digital University Kerala (DUK) - Address
 
-**Campus Address:** Digital University of Kerala (DUK), Technocity Campus, Mangalapuram, Thonnakkal P.O., Thiruvananthapuram, Kerala – 695317  
+**University Address:** Digital University of Kerala (DUK), Technocity Campus, Mangalapuram, Thonnakkal P.O., Thiruvananthapuram, Kerala – 695317 
+**Digital University Kerala (DUK) has 2 Campus**
+**Campus 1 location:** Technocity Campus (Technopark Phase 4), Thiruvananthapuram, Kerala - 695317
+**Campus 2 location:** IIITMK New Campus, Technopark Campus, Thiruvananthapuram, Kerala - 695581
 **Phone:** +91 471 2788000  
 **Email:** academicoffice@duk.ac.in  
 **Google Maps:** https://lg.page/KUDSIT?share
@@ -638,14 +641,14 @@ The Training and Placement Cell supports student career development and employme
 
 ## How to Reach Digital University Kerala (DUK)
 
-**Address:** Digital University of Kerala (DUK), Technocity Campus, Mangalapuram, Thonnakkal P.O., Thiruvananthapuram, Kerala – 695317 
+**University Address / location:** Digital University of Kerala (DUK), Technocity Campus, Mangalapuram, Thonnakkal P.O., Thiruvananthapuram, Kerala – 695317 
 
-**By Air**
+**By Air reach university**
 - Trivandrum International Airport is approximately 18 km away
 - Estimated travel time: ~30 minutes by car
 
 
-**By Rail**
+**By Rail reach university**
 **Thiruvananthapuram Central Railway Station (TVC)** 
 - about 22 km from campus  
 - KSRTC buses towards Attingal (Pallipuram) drop passengers within walking distance of campus  
@@ -656,7 +659,7 @@ The Training and Placement Cell supports student career development and employme
 - Autorickshaws and taxis are available from the station
 
 
-**By Road**
+**By Road reach university**
 - Campus is located close to National Highway 66 (NH 66)
 - Long-distance KSRTC and interstate buses operate along this route
 - The university is approximately 750 meters walking distance from the highway
